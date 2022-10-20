@@ -38,6 +38,10 @@
 		{
 			"Name": "SML",
 			"Enabled": true
+		},
+		{
+			"Name": "MPSyncV2",
+			"Enabled": false
 		}
 	]
 }

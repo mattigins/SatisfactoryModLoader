@@ -28,6 +28,7 @@ bool UFGSessionLibrary::IsInGameSession(ULocalPlayer* localPlayer){ return bool(
 bool UFGSessionLibrary::IsSessionValid(FBlueprintSessionResult session){ return bool(); }
 TEnumAsByte<ECantJoinReason> UFGSessionLibrary::IsSessionJoinable(const FBlueprintSessionResult& session){ return TEnumAsByte<ECantJoinReason>(); }
 void UFGSessionLibrary::JoinSession(UObject* worldContext, const FBlueprintSessionResult& session){ }
+void UFGSessionLibrary::JoinSessionByID(UObject* worldContext, const FString sessionID){ }
 int32 UFGSessionLibrary::GetMaxNumberOfPlayers(const FBlueprintSessionResult& session){ return int32(); }
 bool UFGSessionLibrary::QuerySessionByFriend(UObject* worldContext, const FUniqueNetIdRepl& playerId, const FFGOnlineFriend& targetFriend, FSearchQueryCompleteDelegate onComplete){ return bool(); }
 bool UFGSessionLibrary::QuerySessionByID(UObject* worldContext, const FUniqueNetIdRepl& playerId, FString sessionOnlineID, FSearchQueryCompleteDelegate onComplete){ return bool(); }

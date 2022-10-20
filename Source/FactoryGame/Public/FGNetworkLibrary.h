@@ -269,8 +269,8 @@ public:
 	static void JoinSession( UObject* worldContext, const FBlueprintSessionResult& session );
 
 	///** Join a session by session ID */
-	//UFUNCTION( BlueprintCallable, Category = "FactoryGame|Online|Session", Meta = ( DefaultToSelf = "worldContext" ) )
-	//static void JoinSessionByID( UObject* worldContext, const FString sessionID );
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Online|Session", Meta = ( DefaultToSelf = "worldContext" ) )
+	static void JoinSessionByID( UObject* worldContext, const FString sessionID );
 
 	/** Get the max number of players in a session */
 	UFUNCTION( BlueprintPure, Category="FactoryGame|Online|Session" )
